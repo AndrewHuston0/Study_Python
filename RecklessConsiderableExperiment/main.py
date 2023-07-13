@@ -1,3 +1,4 @@
+'''
 print("Hello world!")
 
 a = 2  # 0x0001
@@ -57,3 +58,16 @@ say_hello_name("hojun", 20)
 
 # 질문 : print는 몇 개의 argument가 가능할까?
 # say_hello_name 데이터를 만들 때는 데이터를 위한 공간으로 2개를 만들었는데 그렇다면 print는 몇 개의 공간이 있을까? 무한대의 공간
+'''
+
+
+# 편의상 위의 전 과정 다 주석처리
+def say_hello(user_name="anonymous"
+              ):  # user_name -> user_name= 로 바꾸는 것 만으로도 argument가 주어지지 않은 경우에
+  print("hello", user_name)
+
+
+say_hello("hojun")
+say_hello(
+)  # 이렇게 user_name을 입력하지 않으면 기본적으로 에러를 일으키지만, default값을 지정해줌으로써 에러를 피할 수 있다.
+# hojun의 경우 프로세스가 user_name="anonymous"라는 parameter전체가 argument로 바뀌지만, argument가 없을 경우 parameter가 치환되지 않고 내용 그대로 적용된다.
