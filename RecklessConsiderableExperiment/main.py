@@ -71,3 +71,23 @@ say_hello("hojun")
 say_hello(
 )  # 이렇게 user_name을 입력하지 않으면 기본적으로 에러를 일으키지만, default값을 지정해줌으로써 에러를 피할 수 있다.
 # hojun의 경우 프로세스가 user_name="anonymous"라는 parameter전체가 argument로 바뀌지만, argument가 없을 경우 parameter가 치환되지 않고 내용 그대로 적용된다.
+
+
+def plus(a=0, b=0):
+  print(a + b)
+
+
+def minus(a=0, b=0):
+  print(a - b)
+
+
+def multi(a=0, b=0):
+  print(a * b)
+
+
+def divide(a=0, b=1):
+  print(a / b)
+
+
+def powerof(a=0, b=1):
+  print(a**b)
