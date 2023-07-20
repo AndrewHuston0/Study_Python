@@ -59,8 +59,7 @@ say_hello_name("hojun", 20)
 # 질문 : print는 몇 개의 argument가 가능할까?
 # say_hello_name 데이터를 만들 때는 데이터를 위한 공간으로 2개를 만들었는데 그렇다면 print는 몇 개의 공간이 있을까? 무한대의 공간
 '''
-
-
+'''
 # 편의상 위의 전 과정 다 주석처리
 def say_hello(user_name="anonymous"
               ):  # user_name -> user_name= 로 바꾸는 것 만으로도 argument가 주어지지 않은 경우에
@@ -91,3 +90,17 @@ def divide(a=0, b=1):
 
 def powerof(a=0, b=1):
   print(a**b)
+'''
+
+
+# 함수의 값을 받는 방법
+def tax_calc(money):
+  return money * 0.25  #return을 함으로써 값을 반환
+
+
+def pay_tax(tax):
+  print("Thank you for paying", tax)
+
+
+to_pay = tax_calc(30000000000)  #변수에 반환된 함수 값을 넣음
+pay_tax(to_pay)  # 해당 변수를 호출하여 반환된 함수값을 다른 함수에서 받음
